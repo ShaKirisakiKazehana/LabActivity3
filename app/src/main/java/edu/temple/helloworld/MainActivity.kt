@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TabHost
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             if (name.isNotEmpty()) {
                 displayTextView.text = "Hello, $name"
             } else {
-
+                Toast.makeText(this, "Please Enter a Name", Toast.LENGTH_SHORT).show()
             }
         }
 
